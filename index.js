@@ -75,7 +75,7 @@ const start = async () => {
       }
     });
   } catch (e) {
-    console.log(e);
+    return bot.sendMessage(chatId, "Error: " + e.message);
   }
 };
 
